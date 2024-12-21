@@ -10,6 +10,12 @@ import {
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
+  // decal -> projects and image to surface of geometry
+  // useTexture -> a hook that loads the image as a texture ,texture is assigned to decal
+  // Float -> a component that makes 3D object float and slightly rotate
+  // icosahedronGeometry: Defines the shape of the object (a 20-sided sphere-like shape).
+  // meshStandardMaterial: Adds realistic material effects like lighting and shadows.
+
   const [decal] = useTexture([props.imgUrl]);
 
   return (
