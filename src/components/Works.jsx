@@ -5,6 +5,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 // ProjectCard takes below parameters defined in the sepearte file wher all projects are kept in projects array
 
@@ -14,7 +15,8 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  source_code_link_github,
+  source_code_link_deploy,
 }) => {
   return (
     // this tilt component is used to tilt the card while hovering
@@ -40,7 +42,7 @@ const ProjectCard = ({
           >
             {/*here onClick() function is defined to open the github link on clicking */}
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(source_code_link_github, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex 
               justify-center items-center cursor-pointer"
             >
@@ -49,6 +51,14 @@ const ProjectCard = ({
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
+            </div>
+            {/*deployement link */}
+            <div
+              onClick={() => window.open(source_code_link_deploy, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex 
+              justify-center items-center cursor-pointer"
+            >
+              <FaCloudUploadAlt className="w-1/2 h-1/2 object-contain" />
             </div>
           </div>
         </div>
@@ -60,7 +70,7 @@ const ProjectCard = ({
         {/* here map is used on tags array and are represented below on each card */}
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <p key={tag.name} className={`text-[14px] text-white`}>
               #{tag.name}
             </p>
           ))}
@@ -88,7 +98,7 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] 
         max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
+          Following projects showcases my skills and education through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos in it. It reflects my
           ability to solve complex problems, work with different technologies,
@@ -105,4 +115,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

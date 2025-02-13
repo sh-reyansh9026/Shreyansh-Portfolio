@@ -1,8 +1,5 @@
-import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import logo from "./logo.png";
+import backend from "./backend.jpg";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -21,21 +18,29 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import udemy from "./cerificates/udemy.pdf";
+import flipkartGrid from "./cerificates/flipkartGrid.jpg"
+import drishya from "./cerificates/drishya.png";
+import udemy1 from "./cerificates/udemy1.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import school from "./education/school.png";
+import college from "./education/college.jpg";
 
+import BeautifulPlanetLogo from "./BeautifulPlanetLogo.jpeg";
+
+import Nexify from "./projects/Nexify.png"
+import PenWryt from "./projects/PenWryt.png"
+import drumBeats from "./projects/drumBeats.png"
+import music from "./projects/music.png"
+import SimonGame from "./projects/SimonGame.png"
+import TODO from "./projects/TODO.png"
+
+import frontend from "./frontend.jpg"
+import react from "./react.png"
+import nextjs from "./nextjs.jpg"
 export {
   logo,
   backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -52,11 +57,20 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  udemy,
+  flipkartGrid,
+  drishya,
+  school,
+  college,
+  udemy1,
+  BeautifulPlanetLogo,
+  Nexify,
+  PenWryt,
+  frontend,
+  react,
+  nextjs,
+  drumBeats,
+  music,
+  SimonGame,
+  TODO
 };
