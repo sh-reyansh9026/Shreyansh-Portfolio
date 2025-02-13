@@ -163,7 +163,7 @@ const technologies = [
 
 const educations = [
   {
-    title: "2020 - 2024",
+    title: "2020 - 2026",
     content: (
       <div className="flex flex-col space-y-4">
         {/* Degree and Icon Section */}
@@ -224,7 +224,7 @@ const educations = [
         <p className="text-sm text-gray-500 font-normal leading-relaxed">
           ✅ Completed coursework in PCM
           <br />
-          ✅Gained knowledge in programming concepts, data structures, and
+          ✅ Gained knowledge in programming concepts, data structures, and
           algorithms.
           <br />✅ Strengthened analytical skills through subjects like
           Mathematics and Physics.
