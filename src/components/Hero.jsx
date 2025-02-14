@@ -23,7 +23,7 @@ export default function HeroSection() {
             <h1 className="text-white">
               Hi, I'm <span className="text-[#0f0e5a]">Shreyansh</span>
             </h1>
-            <p className="mt-4 p-4 text-white text-lg leading-[30px]">
+            <p className="mt-4 px-16 md:px-4 text-white text-lg leading-[30px]">
               I'm a passionate Software Developer specialized in MERN stack and
               Next.js, building scalable and high-performance web applications.
               With a strong foundation in Data Structures and Algorithms, I
