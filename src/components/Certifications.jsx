@@ -80,7 +80,7 @@ const CertificationCard = ({ image, overlayText }) => {
         <div
           style={textStyle}
           dangerouslySetInnerHTML={{ __html: overlayText.title }}
-          className="bg-slate-700 text-2xl font-bold text-align-center ml-9 text-black underline rounded-3xl"
+          className="bg-blue-950 text-2xl font-bold text-align-center ml-9 text-white underline rounded-3xl"
         />
         {/* for content */}
         <div

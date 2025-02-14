@@ -35,38 +35,44 @@ const Tech = () => {
   const techs = [
     {
       name: "React",
-      icon: <RiReactjsLine className="text-7xl text-cyan-400" />,
+      icon: <RiReactjsLine className="text-7xl text-[#61DAFB]" />,
     },
-    { name: "MySQL", icon: <GrMysql className="text-7xl" /> },
-    { name: "MongoDB", icon: <SiMongodb className="text-7xl text-cyan-500" /> },
-    { name: "Express", icon: <SiExpress className="text-7xl text-red-700" /> },
-    { name: "Node.js", icon: <FaNodeJs className="text-7xl text-green-500" /> },
+    { name: "MySQL", icon: <GrMysql className="text-7xl text-[#4479A1]" /> },
+    {
+      name: "MongoDB",
+      icon: <SiMongodb className="text-7xl text-[#47A248]" />,
+    },
+    {
+      name: "Express",
+      icon: <SiExpress className="text-7xl text-[#000000]" />,
+    },
+    { name: "Node.js", icon: <FaNodeJs className="text-7xl text-[#339933]" /> },
     {
       name: "PostgreSQL",
-      icon: <BiLogoPostgresql className="text-7xl text-sky-700" />,
+      icon: <BiLogoPostgresql className="text-7xl text-[#336791]" />,
     },
-    { name: "Github", icon: <FaGithub className="text-7xl text-green-500" /> },
+    { name: "Github", icon: <FaGithub className="text-7xl text-white" /> },
     {
       name: "Material UI",
-      icon: <SiMui className="text-7xl text-green-500" />,
+      icon: <SiMui className="text-7xl text-[#0081CB]" />,
     },
-    { name: "HTML 5", icon: <FaHtml5 className="text-7xl text-green-500" /> },
+    { name: "HTML 5", icon: <FaHtml5 className="text-7xl text-[#E34F26]" /> },
     {
       name: "Tailwind CSS",
-      icon: <SiTailwindcss className="text-7xl text-green-500" />,
+      icon: <SiTailwindcss className="text-7xl text-[#38B2AC]" />,
     },
     {
       name: "Javascript",
-      icon: <SiJavascript className="text-7xl text-green-500" />,
+      icon: <SiJavascript className="text-7xl text-[#F7DF1E]" />,
     },
     {
       name: "Socket.io",
-      icon: <SiSocketdotio className="text-7xl text-green-500" />,
+      icon: <SiSocketdotio className="text-7xl text-[#f7f4f4]" />,
     },
-    { name: "Java", icon: <FaJava className="text-7xl text-green-500" /> },
-    { name: "C++", icon: <SiCplusplus className="text-7xl text-green-500" /> },
-    { name: "C", icon: <SiC className="text-7xl text-green-500" /> },
-    { name: "Python", icon: <SiPython className="text-7xl text-green-500" /> },
+    { name: "Java", icon: <FaJava className="text-7xl text-[#007396]" /> },
+    { name: "C++", icon: <SiCplusplus className="text-7xl text-[#00599C]" /> },
+    { name: "C", icon: <SiC className="text-7xl text-[#A8B9CC]" /> },
+    { name: "Python", icon: <SiPython className="text-7xl text-[#3776AB]" /> },
   ];
 
   return (

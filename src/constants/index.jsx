@@ -24,7 +24,6 @@ import {
   music,
   SimonGame,
   TODO,
-  frontend,
   react,
   nextjs,
 } from "../assets";
@@ -96,10 +95,6 @@ const certifications = [
   },
 ];
 const services = [
-  {
-    title: "Web Developer",
-    icon: frontend,
-  },
   {
     title: "React Developer",
     icon: react,

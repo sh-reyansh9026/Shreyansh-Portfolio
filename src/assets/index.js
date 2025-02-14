@@ -35,7 +35,6 @@ import music from "./projects/music.png"
 import SimonGame from "./projects/SimonGame.png"
 import TODO from "./projects/TODO.png"
 
-import frontend from "./frontend.jpg"
 import react from "./react.png"
 import nextjs from "./nextjs.jpg"
 export {
@@ -66,7 +65,6 @@ export {
   BeautifulPlanetLogo,
   Nexify,
   PenWryt,
-  frontend,
   react,
   nextjs,
   drumBeats,

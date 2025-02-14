@@ -19,17 +19,34 @@ export default function HeroSection() {
           transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
           className="text-4xl font-medium tracking-tight text-white md:text-7xl -mt-10"
         >
-          Hi, I'm <span className="text-[#915eff]">Shreyansh</span>
-          <p className="mt-4 text-white text-lg text-align text-center from-neutral-100">
-            I'm a passionate Software Developer specializing in MERN stack and
-            <br /> Next.js, building scalable and high-performance web
-            applications.
-            <br /> With a strong foundation in Data Structures and Algorithms, I
-            create
-            <br /> seamless and efficient digital experiences. Let's turn ideas
-            into reality
-            <br /> with clean, optimized code!
-          </p>
+          <div className="text-center px-4">
+            <h1 className="text-[#0f0e5a]">Shreyansh</h1>
+            <p className="mt-4 text-lg text-neutral-100">
+              I'm a passionate Software Developer specializing in MERN stack and
+              <span className="hidden md:inline">
+                {" "}
+                <br />{" "}
+              </span>{" "}
+              Next.js, building scalable and high-performance web applications.
+              <span className="hidden md:inline">
+                {" "}
+                <br />{" "}
+              </span>{" "}
+              With a strong foundation in Data Structures and Algorithms, I
+              create
+              <span className="hidden md:inline">
+                {" "}
+                <br />{" "}
+              </span>{" "}
+              seamless and efficient digital experiences. Let's turn ideas into
+              reality
+              <span className="hidden md:inline">
+                {" "}
+                <br />{" "}
+              </span>{" "}
+              with clean, optimized code!
+            </p>
+          </div>
         </motion.h1>
 
         <motion.button

@@ -83,7 +83,7 @@ export default function Footer() {
 
   return (
     <div className="flex items-center justify-center">
-      <footer className="fixed bottom-6 px-24 md:px-56 py-8 min-w-[350px] bg-white dark:bg-gray-900 shadow-lg flex items-center justify-center rounded-2xl">
+      <footer className="fixed bottom-6 px-24 md:px-56 py-8 min-w-[350px] bg-transparent shadow-lg flex items-center justify-center">
         <FloatingDock mobileClassName="translate-y-2" items={links} />
       </footer>
     </div>
