@@ -6,10 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { FaCloudUploadAlt } from "react-icons/fa";
-import dynamic from "next/dynamic";
-
-// Fix hydration issues by dynamically importing this component
-const Works = dynamic(() => Promise.resolve(WorksComponent), { ssr: false });
+import { useEffect, useState } from "react";
 
 const ProjectCard = ({
   index,
@@ -21,7 +18,6 @@ const ProjectCard = ({
   source_code_link_deploy,
 }) => {
   return (
-    // Applying motion effect for animations
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       initial={false}
@@ -77,7 +73,15 @@ const ProjectCard = ({
 };
 
 // Works Section - Showcasing Projects
-const WorksComponent = () => {
+const Works = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null; // Prevents hydration issues on mobile screens
+
   return (
     <div className="min-h-screen w-full">
       <motion.div variants={textVariant()} initial={false}>
