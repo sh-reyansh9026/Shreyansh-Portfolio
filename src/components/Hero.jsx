@@ -20,31 +20,18 @@ export default function HeroSection() {
           className="text-4xl font-medium tracking-tight text-white md:text-7xl -mt-10"
         >
           <div className="text-center px-4">
-            <h1 className="text-[#0f0e5a]">Shreyansh</h1>
-            <p className="mt-4 text-lg text-neutral-100">
-              I'm a passionate Software Developer specializing in MERN stack and
-              <span className="hidden md:inline">
-                {" "}
-                <br />{" "}
-              </span>{" "}
+            <h1 className="text-white">
+              Hi, I'm
+              <span className="text-[#0f0e5a]">Shreyansh</span>
+            </h1>
+            <p className="mt-4 text-lg text-neutral-100 text-center md:text-left">
+              I'm a passionate Software Developer specialized in MERN stack and
               Next.js, building scalable and high-performance web applications.
-              <span className="hidden md:inline">
-                {" "}
-                <br />{" "}
-              </span>{" "}
+              <br className="hidden md:block" />
               With a strong foundation in Data Structures and Algorithms, I
-              create
-              <span className="hidden md:inline">
-                {" "}
-                <br />{" "}
-              </span>{" "}
-              seamless and efficient digital experiences. Let's turn ideas into
-              reality
-              <span className="hidden md:inline">
-                {" "}
-                <br />{" "}
-              </span>{" "}
-              with clean, optimized code!
+              create seamless and efficient digital experiences.
+              <br className="hidden md:block" />
+              Let's turn ideas into reality with clean, optimized code!
             </p>
           </div>
         </motion.h1>

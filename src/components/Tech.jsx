@@ -44,7 +44,7 @@ const Tech = () => {
     },
     {
       name: "Express",
-      icon: <SiExpress className="text-7xl text-[#000000]" />,
+      icon: <SiExpress className="text-7xl text-white" />,
     },
     { name: "Node.js", icon: <FaNodeJs className="text-7xl text-[#339933]" /> },
     {
