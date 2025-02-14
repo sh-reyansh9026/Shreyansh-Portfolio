@@ -24,14 +24,15 @@ export default function HeroSection() {
               Hi, I'm
               <span className="text-[#0f0e5a]">Shreyansh</span>
             </h1>
-            <p className="mt-4 text-lg text-neutral-100 text-center md:text-left">
+            <p
+              className="mt-4 text-neutral-100 text-center text-lg
+      max-w-3xl leading-[30px]"
+            >
               I'm a passionate Software Developer specialized in MERN stack and
               Next.js, building scalable and high-performance web applications.
-              <br className="hidden md:block" />
               With a strong foundation in Data Structures and Algorithms, I
-              create seamless and efficient digital experiences.
-              <br className="hidden md:block" />
-              Let's turn ideas into reality with clean, optimized code!
+              create seamless and efficient digital experiences. Let's turn
+              ideas into reality with clean, optimized code!
             </p>
           </div>
         </motion.h1>

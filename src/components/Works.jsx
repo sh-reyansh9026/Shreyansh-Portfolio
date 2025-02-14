@@ -6,7 +6,10 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { FaCloudUploadAlt } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+// Fix hydration issues by dynamically importing this component
+const Works = dynamic(() => Promise.resolve(WorksComponent), { ssr: false });
 
 const ProjectCard = ({
   index,
@@ -18,7 +21,11 @@ const ProjectCard = ({
   source_code_link_deploy,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    // Applying motion effect for animations
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      initial={false}
+    >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
@@ -30,7 +37,7 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {/* GitHub Link */}
+            {/* GitHub Repository Link */}
             <div
               onClick={() => window.open(source_code_link_github, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -56,6 +63,7 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
+        {/* Displaying tags dynamically */}
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p key={tag.name} className="text-[14px] text-white">
@@ -68,18 +76,11 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) return null; // Prevents hydration issues & flickering
-
+// Works Section - Showcasing Projects
+const WorksComponent = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <div className="min-h-screen w-full">
+      <motion.div variants={textVariant()} initial={false}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
@@ -97,12 +98,13 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      {/* Mapping through projects to display project cards */}
+      <div className="mt-20 flex flex-wrap gap-7 w-full justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
