@@ -29,7 +29,7 @@ const Navbar = () => {
           font-bold cursor-pointer flex"
           >
             Shreyansh &nbsp;
-            <span className="block">| Web Developer</span>
+            <span className="block">| Developer</span>
           </p>
         </Link>
 

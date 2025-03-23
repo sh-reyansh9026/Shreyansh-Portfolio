@@ -37,6 +37,7 @@ import TODO from "./projects/TODO.png"
 
 import react from "./react.png"
 import nextjs from "./nextjs.jpg"
+import native from "./native.png"
 export {
   logo,
   backend,
@@ -70,5 +71,6 @@ export {
   drumBeats,
   music,
   SimonGame,
-  TODO
+  TODO,
+  native
 };

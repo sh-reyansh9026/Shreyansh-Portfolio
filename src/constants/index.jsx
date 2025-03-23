@@ -26,6 +26,7 @@ import {
   TODO,
   react,
   nextjs,
+  native,
 } from "../assets";
 import React from "react";
 
@@ -106,6 +107,10 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "React Native Developer",
+    icon: native,
   },
 ];
 
@@ -295,13 +300,16 @@ const experiences = [
         <p className="text-sm text-gray-500 font-normal leading-relaxed">
           ✅ Currently working as an SDE Intern at Beautiful Planet.AI
           <br />
-          ✅ Contributed to the development of their website using Next.js for
-          fast and scalable wesbite.
+          ✅ Developed company's website using Next.js for fast and scalable
+          wesbite.
           <br />
           ✅ Integrated Strapi as a headless CMS to efficiently manage site
           content content.
           <br />✅ Worked on optimizing performance and implementing sustainable
           solutions.
+          <br /> ✅ Learned the deployement of website using AWS.
+          <br />✅ Currently working on company's new project using React
+          Native.
         </p>
       </div>
     ),
