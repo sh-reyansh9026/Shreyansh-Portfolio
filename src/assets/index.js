@@ -22,12 +22,15 @@ import udemy from "./cerificates/udemy.pdf";
 import flipkartGrid from "./cerificates/flipkartGrid.jpg"
 import drishya from "./cerificates/drishya.png";
 import udemy1 from "./cerificates/udemy1.png";
+import ML from "./cerificates/ML.png";
+import CP from "./cerificates/CP.png";
 
 import school from "./education/school.png";
 import college from "./education/college.jpg";
 
 import BeautifulPlanetLogo from "./BeautifulPlanetLogo.jpeg";
 
+import AspireAi from "./projects/AspireAi.png"
 import Nexify from "./projects/Nexify.png"
 import PenWryt from "./projects/PenWryt.png"
 import drumBeats from "./projects/drumBeats.png"
@@ -38,6 +41,7 @@ import TODO from "./projects/TODO.png"
 import react from "./react.png"
 import nextjs from "./nextjs.jpg"
 import native from "./native.png"
+
 export {
   logo,
   backend,
@@ -58,12 +62,15 @@ export {
   typescript,
   threejs,
   udemy,
+  ML,
+  CP,
   flipkartGrid,
   drishya,
   school,
   college,
   udemy1,
   BeautifulPlanetLogo,
+  AspireAi,
   Nexify,
   PenWryt,
   react,

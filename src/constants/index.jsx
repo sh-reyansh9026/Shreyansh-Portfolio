@@ -12,6 +12,8 @@ import {
   git,
   threejs,
   udemy,
+  ML,
+  CP,
   flipkartGrid,
   drishya,
   school,
@@ -27,6 +29,7 @@ import {
   react,
   nextjs,
   native,
+  AspireAi,
 } from "../assets";
 import React from "react";
 
@@ -75,6 +78,24 @@ const certifications = [
       link: udemy,
     },
     image: udemy1,
+  },
+  {
+    overlayText: {
+      title: "Introduction to Machine Learning",
+      content:
+        "Completed the Introduction to Machine Learning course by NPTEL, securing a position in the top 5% of learners. Gained a strong foundation in core ML concepts including supervised and unsupervised learning, model evaluation, and algorithmic techniques — with hands-on experience in implementing ML models and understanding their real-world applications.",
+      link: ML,
+    },
+    image: ML,
+  },
+  {
+    overlayText: {
+      title: "Getting started with CP",
+      content:
+        "Completed the Getting Started with Competitive Programming course by NPTEL, focused on enhancing problem-solving skills and algorithmic thinking. Covered essential topics such as time and space complexity, recursion, dynamic programming, greedy algorithms, and graph theory — laying a strong foundation for excelling in coding contests and technical interviews.",
+      link: CP,
+    },
+    image: CP,
   },
   {
     overlayText: {
@@ -298,18 +319,41 @@ const experiences = [
 
         {/* Additional Details */}
         <p className="text-sm text-gray-500 font-normal leading-relaxed">
-          ✅ Currently working as an SDE Intern at Beautiful Planet.AI
+          ✅ Developed and deployed the company's website using Figma, Next.js
+          and Strapi CMS on Amazon Web Services.
           <br />
-          ✅ Developed company's website using Next.js for fast and scalable
-          wesbite.
+          ✅ Engineered reusable components and optimized web pages for
+          performance, resulting in faster load times by reducing development
+          time by 30% and refined user experience.
           <br />
-          ✅ Integrated Strapi as a headless CMS to efficiently manage site
-          content content.
-          <br />✅ Worked on optimizing performance and implementing sustainable
-          solutions.
-          <br /> ✅ Learned the deployement of website using AWS.
-          <br />✅ Currently working on company's new project using React
-          Native.
+          ✅ Improved SEO performance by embedding Google Analytics resulting
+          around 35 % increase in organic traffic.
+          <br />
+          ✅ Integrated and increased API response for content delivery by 25%
+          through database indexing.
+          <br />
+          ✅ Participated in code reviews, debugging, and contributing to a
+          scalable and maintainable codebase.
+          <br />
+          ✅ Optimized website load time by 40 % by implementing server - side
+          rendering in Next.js.
+          <br />
+          ✅ Collaborated in a 4-member agile team and performing regular sprint
+          reviews.
+          <br />
+          ✅ Currently building a React Native App for company’s new initiative.
+          <br />✅ Developing a high-performance cross-platform mobile app using
+          React Native CLI, targeting both Android and iOS platforms.
+          <br />✅
+          <br />✅ Built 20+ responsive UI screens with smooth animations and
+          intuitive UX, enhancing user interaction and navigation flow. <br />✅
+          Integrated 15+ RESTful APIs and third-party libraries, including
+          Axios, Cloudinary, Firebase, and socket-based chat services.
+          <br />✅ Optimized app speed and rendering performance by lazy-loading
+          assets, reducing API load time by 40%. <br />✅ Implemented JWT-based
+          secure login and session handling with protected routes and role-based
+          access. <br />✅ Gained hands-on experience with version control
+          systems like Git and collaborated using Agile methodologies.
         </p>
       </div>
     ),
@@ -334,6 +378,36 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "AspireAi",
+    description:
+      "AspireAI is an AI-powered career preparation platform built with Next.js, designed to help users navigate the evolving job market. It features secure authentication via Clerk, and leverages Gemini API and Inngest to deliver weekly insights on trending jobs and salary patterns through dynamic visualizations. Users can generate and customize ATS-friendly resumes and cover letters, and prepare for interviews with AI-generated questions tailored to current industry demands. The platform also tracks performance over time with intuitive graphs offering a personalized and data-driven prep experience.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "inngest",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "red-text-gradient",
+      },
+      {
+        name: "gemini",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: AspireAi,
+    source_code_link_github: "https://github.com/sh-reyansh9026/AspireAI",
+    source_code_link_deploy: "https://aspire-ai-sable.vercel.app/",
+  },
   {
     name: "Nexify",
     description:

@@ -8,7 +8,12 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
-
+      fontFamily: {
+        arial: ['Arial', 'sans-serif'],
+        times: ['Times New Roman', 'serif'],
+        verdana: ['Verdana', 'sans-serif'],
+        courier: ['Courier New', 'monospace'],
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
